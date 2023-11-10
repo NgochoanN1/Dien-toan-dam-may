@@ -1,0 +1,56 @@
+body{
+    background:#4874aa;
+    font-family: sans-serif;
+
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.text{
+    color: white;
+    margin-bottom: 2px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.loading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: centrer;
+
+}
+.loading .line-box{
+    padding: auto;
+    width: 50%;
+    height: 20px;
+    border-radius: 20px;
+
+}
+.loading .line-box .line{
+    height: 20px;
+    border-radius: 20px;
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0,0,0,0);
+    animation-iteration-count:infinite ;
+}
+@keyframes loading{
+    0%{
+        background-color: greenyellow;
+        width:0%;
+        
+    }
+    100%{
+        background-color: red;
+        width: 100%;
+    }
+}
